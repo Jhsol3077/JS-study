@@ -21,14 +21,14 @@ if (randomNum >= 5) {
 
 const myFruit = '사과';
 
-switch (myFruit) {
+switch (myFruit) { //switch 식은 값과 타입의 비교가 모두 이루어진다, === 비교 수행
   case '사과':
     alert('사과입니다.');
     break;
   case '귤':
     alert('귤입니다.');
     break;
-  default:
+  default: //만족하는 조건이 하나도 없는 경우의 처리
     alert('기타 과일입니다.');
     break;
 }
