@@ -15,7 +15,9 @@ array1.sort((a,b) => {
     return 0;
   }
 
+  // a가 b보다 크면 b,a의 순서로 정렬
   if ( a > b) {
     return -1;
   }
 });
+
