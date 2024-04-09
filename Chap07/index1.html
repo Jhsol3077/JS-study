@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main class="main">
+    <div id="log2"></div>
+  </main>
+  <script>
+    //조작 영역 
+    const logArea = document.querySelector('#log2');
+
+    //대상 영역에서 마우스 버튼을 누르면 로그 출력
+    logArea.addEventListener('mousedown', () => {
+      logArea.innerHTML= '마우스 클릭 이벤트 발생';
+    });
+
+    //대상 영역에서 마우스 버튼을 떼면 로그를 출력
+    logArea.addEventListener('mouseup', () => {
+      logArea.innerHTML= '마우스 버튼을 떼는 이벤트 발생'
+    });
+
+    //대상 영역에서 마우스를 움직이면 로그를 출력
+    logArea.addEventListener('mousemove', () => {
+      logArea.innerHTML = '마우스 이동 이벤트 발생'
+    });
+    
+  </script>
+</body>
+</html>
